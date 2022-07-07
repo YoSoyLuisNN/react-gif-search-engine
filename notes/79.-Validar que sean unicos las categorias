@@ -1,0 +1,13 @@
+NO usar indice, ya que react usar el index de la llave para saber cuando un elemento se elimino, y asi eliminar visualmente del arreglo
+
+AddCategory lo que hace es crear un nuevo input
+, RECORDAR QUE HACEN UN TRABAJO ESPECIFICO
+
+if( categories.includes(newCategory)) return;
+
+if( categories.includes(newCategory)) {
+    return;
+}
+
+React usa el key de manera unica, por eso no es importante si se usan minusculas o mayusculas
+

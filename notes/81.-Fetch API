@@ -1,0 +1,30 @@
+Mapear las categorias, category lo mandamos como prop al FC GifGrid
+{
+    categories.map( (category) => (
+        <GifGrid 
+            key={ category }
+            category={ category }
+
+        />
+    ))
+}
+
+Creamos la funcion para obtener los gifs
+
+export const getGifs = async( category ) => {
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=PqLzMn9m9wzOJV3o4DvBv6YMyJagp37D&q=${ category }&limit=20`;
+    const resp = await fetch( url );
+    const { data } = await resp.json();
+    // console.log(data)
+
+    const gifs = data.map( img => ({
+        id: img.id,
+        title: img.title,
+        url: img.images.downsized_medium.url
+    }));
+
+    console.log(gifs);
+    return gifs;
+}
+
+Creamos una nueva carpeta llamada helpers y creamos un archivo dentro getGifs.js, movemos la funcion getGifs al archivo .js, la exportamos y la usamos en GifGrid

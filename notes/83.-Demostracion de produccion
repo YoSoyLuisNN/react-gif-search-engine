@@ -1,0 +1,13 @@
+Ejecutar el comando para crear el build
+-yarn build
+
+Nos crea la carpeta dist, dentro de esta carpeta estan os archivos procesados y comprimidos junto con la carpeta de assets que se van a necesitar para hacer el hosting
+
+instalamos http-server
+-yarn add -D http-server
+
+a los scripts del package.json agregamos uno de la siguiente manera
+"server": "yarn http-server"
+
+Ejecutamos el server
+-yarn server

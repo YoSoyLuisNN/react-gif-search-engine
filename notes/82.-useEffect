@@ -1,0 +1,14 @@
+React cada que detecta un cambio vuelve a redibujar
+
+Hay ciertas funcioens que le indican a react que le indican que se ejecute una sola vez
+
+StrictMode ayuda a identificar problemas identificar componentes con warnings, codigo viejo, contextAPI viejo, etc.
+
+COMO HACER PARA QUE AL CAMBIAR EL ESTADO SE VUELVA A EJECUTAR LA PETICION HTTP
+
+
+***useEffect sirve para disparar efecto secundarios, un efecto secundario es un proceso que queramos ejecutar cuando algo suceda
+cuando la category cambie
+cuando el componente se renderice por primera vez
+
+Sin el StrictMode React renderiza la lista de los gifs aunque estemos usando useEffect, esto para asegurarse de que el compoente este funcionando de manera correcta, esto no afecta el Build de produccion

@@ -1,0 +1,15 @@
+Crear un componente que se necargue unicamente de mostrar una categoria
+
+En el caso del categories.map, hacemos uso del return, pero ya esta de una manera implicita, por lo cual no es necesario tenerlo
+{
+    categories.map( category => (
+        <div key={category}>
+            <h3>{ category }</h3>
+            <li> { category } </li>
+        </div>
+    ))
+}
+
+shit+tab = identacion en reversa
+
+NUNCA MANDAR LLAMAR UNA FUNCION DENTRO DE UN FUNCTIONAL COMPONENTS
